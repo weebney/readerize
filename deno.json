@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "@mozilla/readability": "npm:@mozilla/readability@^0.5.0",
+    "jsdom": "npm:jsdom@^25.0.1"
+  },
+  "tasks": {
+    "build": "mkdir bin && deno compile --allow-env --allow-read readerize.js -o 'bin/readerize'",
+    "build-all": "deno compile --allow-env --allow-read --target x86_64-apple-darwin -o bin/readerize-x86_64-apple-darwin readerize.js && deno compile --allow-env --allow-read --target aarch64-apple-darwin -o bin/readerize-aarch64-apple-darwin readerize.js && deno compile --allow-env --allow-read --target aarch64-unknown-linux-gnu -o bin/readerize-aarch64-unknown-linux-gnu readerize.js && deno compile --allow-env --allow-read --target x86_64-unknown-linux-gnu -o bin/readerize-x86_64-unknown-linux-gnu  readerize.js && deno compile --allow-env --allow-read --target x86_64-pc-windows-msvc -o bin/readerize-x86_64-pc-windows-msvc.exe readerize.js"
+  }
+}
