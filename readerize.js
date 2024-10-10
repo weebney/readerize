@@ -17,7 +17,7 @@ $ cat article.html | readerize
 This project is downstream of Readability.js, and its interal functionality is described there.
 https://github.com/mozilla/readability
 
-Copyright (c) 2024 weebney, licensed BSD0.`);
+Copyright (c) 2024 weebney, licensed 0BSD.`);
 }
 
 const decoder = new TextDecoder();

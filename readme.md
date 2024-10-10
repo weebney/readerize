@@ -5,6 +5,7 @@ readerize 0.1.0
 
 readerize reads an HTML document from stdin, returning the "readable" content of the document to stdout.
 If the document isn't readable by Readability.js, readerize will exit with a status of 1.
+The output is in markdown format.
 
 Example:
 $ cat article.html | readerize
@@ -12,7 +13,7 @@ $ cat article.html | readerize
 This project is downstream of Readability.js, and its interal functionality is described there.
 https://github.com/mozilla/readability
 
-Copyright (c) 2024 weebney, public domain.
+Copyright (c) 2024 weebney, licensed 0BSD.
 ```
 
 # building
